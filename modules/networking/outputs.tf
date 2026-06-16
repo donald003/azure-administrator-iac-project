@@ -1,6 +1,6 @@
 output "hub_vnet_id" {
   value = azurerm_virtual_network.hub_vnet.id
-  description = "The ID of the Hub Virtual Netowrk"
+  description = "The ID of the Hub Virtual Network"
 }
 
 output "spoke_vnet_id" {
@@ -17,3 +17,9 @@ output "app_subnet_id" {
   value = azurerm_subnet.app_subnet.id
   description = "The ID of the Spoke Application Subnet for VM deployment"
 }
+
+output "data_subnet_id" {
+  value = azurerm_subnet.data_subnet.id
+  description = "The ID of the Data Subnet"
+}
+
